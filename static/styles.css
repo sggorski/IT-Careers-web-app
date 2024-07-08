@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to right, #D3D3D3, #FFFFFF);
+}
+  
+h1 {
+    font-family: Roboto;
+    font-size: 40px;
+    text-align: center;
+    font-weight:italic;
+    color: rgb(100, 100, 100);
+}
+  
+h2{
+    font-family: Roboto;
+    font-size: 32px;
+    text-align: center;
+    font-weight:italic;
+    color: rgb(100, 100, 100);
+}
+  
+.text_justified {
+    font-family: Roboto;
+    color: rgb(80, 80, 80);
+    text-align: justify;
+}
+  
+.text_centered{
+    font-family: Roboto;
+    color: rgb(100, 80, 80);
+    text-align: center;
+}
+  
+.banner {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    border: 2px solid #000;
+    border-radius: 5px;
+
+
+}
+.container {
+    max-height: 100vh;
+    position: relative;
+    margin: 0 10% 0 10%;
+}
