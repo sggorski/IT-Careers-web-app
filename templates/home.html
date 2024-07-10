@@ -4,13 +4,17 @@
     <meta charset="utf-8">
     
     <title>IT career</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for( 'static', filename='styles.css' )}}">
     <link rel="shortcut icon" href="{{url_for('static', filename='star.png')}}">
 </head>
 <body>
-    <div class="container">
-        <h1>Pursue your career in IT!</h1>
-        <img class="banner" src="{{url_for('static', filename='banner.jpg')}}" alt="Banner">
+    {%include 'nav.html'%}
+    <h1>Pursue your career in IT!</h1>
+    <img class="banner_m" src="{{url_for('static', filename='banner.jpg')}}" alt="Banner">
+    <div class="container2">
+        
+        
         <h2>About our company</h2>
         <p class="text_justified">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nunc sed vestibulum scelerisque. Curabitur sodales quam id aliquam sodales. Aenean in justo sem. Nunc iaculis neque eget orci scelerisque, eu hendrerit tellus feugiat. Sed ac libero justo. Phasellus lacus velit, tempor eget mattis vel, faucibus a lectus. Mauris sit amet elit nibh. Fusce fermentum neque eu tortor bibendum blandit. Nunc et ligula id justo egestas ullamcorper. Pellentesque finibus porttitor elit, in viverra ligula bibendum quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam arcu tortor, congue vitae quam ut, tristique tristique tellus. Aliquam maximus dui et urna elementum vehicula. Sed at odio vel dui pulvinar tempor ut sed erat. Quisque sodales diam sit amet libero tincidunt, eu fermentum leo convallis.
@@ -24,7 +28,7 @@
         <div style="text-align: center;">
             <button class="button">Contact us!</button>
         </div>
-        <p class="text_centered" style="color: rgb(120,120,120)">Copyright 2024</p><br>
     </div>
+    {% include 'footer.html' %}
 </body>
 </html>
