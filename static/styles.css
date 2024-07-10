@@ -4,20 +4,29 @@ body {
   
 h1 {
     font-family: Roboto;
-    font-size: 40px;
+    font-size: 100px;
     text-align: center;
     font-weight:italic;
     color: rgb(100, 100, 100);
 }
-  
-h2{
+p {
+    font-size: 30px;
+}
+h2 {
     font-family: Roboto;
-    font-size: 32px;
+    font-size: 60px;
     text-align: center;
+    font-weight:italic;
+    color: rgb(100, 100, 110);
+}
+
+h4 {
+    font-family: Roboto;
+    font-size: 40px;
+    text-align: left;
     font-weight:italic;
     color: rgb(100, 100, 100);
 }
-  
 .text_justified {
     font-family: Roboto;
     color: rgb(80, 80, 80);
@@ -31,7 +40,7 @@ h2{
 }
   
 .banner {
-    height: 200px;
+    height: 275px;
     width: 100%;
     object-fit: cover;
     filter: blur(2px);
@@ -43,5 +52,34 @@ h2{
 .container {
     max-height: 100vh;
     position: relative;
-    margin: 0 10% 0 10%;
+    margin: 0 15% 0 15%;
+}
+
+.underline {
+    border-bottom: 1px solid #bfbbbb;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #a5b3c0;  
+    color: white;               
+    border: none;               
+    border-radius: 37px;        
+    padding: 15px 30px;         
+    font-size: 24px;            
+    cursor: pointer;           
+    transition: background-color 0.3s;
+    margin-top: 7px;
+}
+
+.button:hover {
+    background-color: #899bae; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 15px;           
 }
