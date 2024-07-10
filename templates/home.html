@@ -13,12 +13,15 @@
     <h1>Pursue your career in IT!</h1>
     <img class="banner_m" src="{{url_for('static', filename='banner.jpg')}}" alt="Banner">
     <div class="container2">
-        
-        
         <h2>About our company</h2>
-        <p class="text_justified">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nunc sed vestibulum scelerisque. Curabitur sodales quam id aliquam sodales. Aenean in justo sem. Nunc iaculis neque eget orci scelerisque, eu hendrerit tellus feugiat. Sed ac libero justo. Phasellus lacus velit, tempor eget mattis vel, faucibus a lectus. Mauris sit amet elit nibh. Fusce fermentum neque eu tortor bibendum blandit. Nunc et ligula id justo egestas ullamcorper. Pellentesque finibus porttitor elit, in viverra ligula bibendum quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam arcu tortor, congue vitae quam ut, tristique tristique tellus. Aliquam maximus dui et urna elementum vehicula. Sed at odio vel dui pulvinar tempor ut sed erat. Quisque sodales diam sit amet libero tincidunt, eu fermentum leo convallis.
-        </p>
+        <div class="row">
+            <div class="col-md-7">
+                <p class="text_justified">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nunc sed vestibulum scelerisque. Curabitur sodales quam id aliquam sodales. Aenean in justo sem. Nunc iaculis neque eget orci scelerisque, eu hendrerit tellus feugiat. Sed ac libero justo. Phasellus lacus velit, tempor eget mattis vel, faucibus a lectus. Mauris sit amet elit nibh. Fusce fermentum neque eu tortor bibendum blandit. Nunc et ligula id justo egestas ullamcorper. Pellentesque finibus porttitor elit, in viverra ligula bibendum quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam arcu tortor, congue vitae quam ut, tristique tristique tellus. Aliquam maximus dui et urna elementum vehicula. Sed at odio vel dui pulvinar tempor ut sed erat. Quisque sodales diam sit amet libero tincidunt, eu fermentum leo convallis.
+                </p>
+            </div>
+            <div class="d-none d-lg-block col-md-5 image1"><img src="static/people.jpg" width=80% height=80%></div>
+        </div>
         <h2>Available jobs:</h2>
         <div>
             {% for job in jobs%}
@@ -26,7 +29,7 @@
             {% endfor %}
         </div>
         <div style="text-align: center;">
-            <button class="button">Contact us!</button>
+            <button class="button2">Contact us!</button>
         </div>
     </div>
     {% include 'footer.html' %}

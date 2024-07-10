@@ -1,15 +1,12 @@
-<link rel="stylesheet" href="{{url_for( 'static', filename='styles.css' )}}">
-<div class = "underline grid-container">
-    <div>
-    <h4>{{job['title']}}</h4>
-    <p style="color: rgb(120,120,120)">
-        <b>Location:</b> {{job['location']}} <br>
-        <b>Salary:</b> {{job['salary']}}
-    </p>
+<div class = "row underline" style="align-items: center;">
+    <div class="col-9">
+        <h4>{{job['title']}}</h4>
+        <p style="color: rgb(120,120,120)">
+            <b>Location:</b> {{job['location']}} <br>
+            <b>Salary:</b> {{job['salary']}}
+        </p>
     </div>
-    <div style="text-align: right;">
-        <button class="button">Apply!</button>
-    </div>
-    
-    
+    <div class="col-3" style="text-align: right;">
+        <button class="button2">Apply!</button>
+    </div> 
 </div>

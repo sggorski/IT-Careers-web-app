@@ -62,11 +62,15 @@ h4 {
     border-radius: 5px;
     margin-bottom:25px;
     margin-top:10px;
+}
 
-
+.image1 {
+    text-align:right;
+    margin-top: 30px;
+    border-radius: 15px;
+    filter: blur(2px);
 }
 .container2 {
-    max-height: 100vh;
     position: relative;
     margin: 0 15% 0 15%;
 }
@@ -77,7 +81,7 @@ h4 {
     margin-bottom: 10px;
 }
 
-.button {
+.button2 {
     background-color: #a5b3c0;  
     color: white;               
     border: none;               
@@ -87,6 +91,7 @@ h4 {
     cursor: pointer;           
     transition: background-color 0.3s;
     margin-top: 7px;
+    margin-bottom: 30px;
 }
 
 .button:hover {
