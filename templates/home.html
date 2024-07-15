@@ -14,11 +14,10 @@
     <img class="banner_m" src="{{url_for('static', filename='banner.jpg')}}" alt="Banner">
     <div class="container2">
         <h2>About our company</h2>
+        <div class="d-block d-lg-none">{%include 'text.html'%}</div>
         <div class="row">
-            <div class="col-md-7">
-                <p class="text_justified">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nunc sed vestibulum scelerisque. Curabitur sodales quam id aliquam sodales. Aenean in justo sem. Nunc iaculis neque eget orci scelerisque, eu hendrerit tellus feugiat. Sed ac libero justo. Phasellus lacus velit, tempor eget mattis vel, faucibus a lectus. Mauris sit amet elit nibh. Fusce fermentum neque eu tortor bibendum blandit. Nunc et ligula id justo egestas ullamcorper. Pellentesque finibus porttitor elit, in viverra ligula bibendum quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam arcu tortor, congue vitae quam ut, tristique tristique tellus. Aliquam maximus dui et urna elementum vehicula. Sed at odio vel dui pulvinar tempor ut sed erat. Quisque sodales diam sit amet libero tincidunt, eu fermentum leo convallis.
-                </p>
+            <div class=" d-none d-lg-block col-md-7">
+                {%include 'text.html'%}
             </div>
             <div class="d-none d-lg-block col-md-5 image1"><img src="static/people.jpg" width=80% height=80%></div>
         </div>
@@ -28,8 +27,8 @@
             {% include 'jobs.html' %}
             {% endfor %}
         </div>
-        <div style="text-align: center;">
-            <button class="button2">Contact us!</button>
+        <div style="text-align: center;"><br>
+            <a href="mailto:sggorski@interia.pl?subject=Question%20about%20job%20positions&body=Name%3A%20%3Cname%3E%0D%0AQuestion%3A%20%3Cquestion%3E" class="button2" style="text-decoration: none;">Contact us!</a>
         </div>
     </div>
     {% include 'footer.html' %}
