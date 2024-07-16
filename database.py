@@ -10,4 +10,14 @@ def get_data():
        data.append(dict(row))
   return data
     
-print(get_data())       
+def load_job(id):
+  print("got:", id, "nothing")
+  with engine.connect() as conn:
+    cmd = f"select * from jobs where id={id}"
+    result = conn.execute(text(cmd))
+    data = result.mappings().all()
+    if len(data) == 0: 
+      return None
+    else:
+      return dict(data[0])
+    
