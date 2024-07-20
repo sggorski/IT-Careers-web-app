@@ -1,0 +1,31 @@
+<h2>Application form</h2>
+<form action="/job/{{job['id']}}/apply" method="post">
+
+<p>
+      <label><b style="color:grey">Full name</b></label><br>
+      <input type="text" name="full_name" placeholder="John Smith" required>
+</p>
+<p>
+    <label><b style="color:grey">Email</b></label><br>
+    <input type="email" name="email" placeholder="jsmith@gmail.com" required>
+</p>
+<p>
+    <label><b style="color:grey">LinkedIn URL</b></label><br>
+    <input type="url" name="li_url" placeholder="www.linkedin.com" required>
+</p>
+  <p>
+      <label><b style="color:grey">Education</b></label><br>
+      <textarea type="text" style="width: 400px" name="education" required></textarea>
+  </p>
+  <p>
+      <label><b style="color:grey">Work Experience</b></label><br>
+      <textarea type="text" style="width: 400px" name="work_experience" required></textarea>
+  </p>
+  <p>
+      <label><b style="color:grey">CV URL</b></label><br>
+      <input type="url" name="cv_url" required>
+  </p>
+  <p>
+    <input type="hidden" name="job_id" value="{{ job['id'] }}">
+    <input type='submit' value="Submit!">
+  </p>
